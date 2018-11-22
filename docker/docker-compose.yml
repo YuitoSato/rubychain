@@ -1,0 +1,11 @@
+version: "2"
+services:
+  rubychain:
+    container_name: "rubychain"
+    build:
+      context: "../"
+      dockerfile: "docker/Dockerfile"
+    volumes:
+      - ../routes.rb:/app/routes.rb
+    ports:
+      - "3000:3000"
