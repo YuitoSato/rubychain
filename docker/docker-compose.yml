@@ -6,6 +6,6 @@ services:
       context: "../"
       dockerfile: "docker/Dockerfile"
     volumes:
-      - ../routes.rb:/app/routes.rb
+      - ../routes.rb:/rubychain/routes.rb
     ports:
       - "3000:3000"
