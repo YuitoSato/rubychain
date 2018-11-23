@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'sinatra/reloader'
+require 'sinatra/reloader' if development?
 
 set :bind, '0.0.0.0'
 set :port, 3000
@@ -9,5 +9,5 @@ ARGV.each do |arg|
 end
 
 get '/' do
-  'Hello World!'
+  'Hello Worldaaaaa!'
 end
